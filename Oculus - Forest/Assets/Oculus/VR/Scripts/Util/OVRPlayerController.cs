@@ -221,6 +221,11 @@ public class OVRPlayerController : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.E))
 			buttonRotation += RotationRatchet;
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        //if(Input.GetButtonDown("Jump"))
+            Jump();
+
 	}
 
 	protected virtual void UpdateController()
